@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/interactive-card-details-form.js" defer></script>
+  <title>Interactive Card Details Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img class="mobile-card-image" src="assets/images/card.png">
+      <div class="card-img-first">
+        <img class="desktop-card-image" src="assets/images/card-front--desktop.png">
+        <p id="cardNumber">0000 0000 0000 0000</p>
+        <p id="cardHolderName">JANE APPLESEED</p>
+        <p id="expDate"><span id="expDateMonth">00</span>/<span id="expDateYear">00</span></p>
+      </div>
+      <div class="card-img-last">
+        <img class="desktop-card-image" src="assets/images/card-back--desktop.png">
+        <p id="cvc">000</p>
+        <img class="desktop-card-image card-lines" src="assets/images/card-lines.png">
+      </div>
+    </div>
+    <div class="card-infos">
+      <div class="card-infos-item">
+        <p>CARDHOLDER NAME</p>
+        <input id="nameInput" type="text" placeholder="e.g. Jane Appleseed">
+        <p class="alert-text alert-text--transparent">Can’t be blank</p>
+      </div>
+      <div class="card-infos-item">
+        <p>CARD NUMBER</p>
+        <input id="numberInput" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <p class="alert-text alert-text--transparent">Can’t be blank</p>
+      </div>
+      <div class="card-infos-item card-infos-item--last">
+        <div class="card-infos-item__wrapper">
+          <p>EXP. DATE (MM/YY)</p>
+          <div class="card-infos-item__wrapper-inputs">
+            <input id="monthInput" type="text" placeholder="MM" maxlength="2">
+            <input id="yearInput" type="text" placeholder="YY" maxlength="2">
+          </div>
+          <p class="alert-text alert-text--transparent">Can’t be blank</p>
+        </div>
+        <div class="card-infos-item__wrapper">
+          <p>CVC</p>
+          <input id="cvcInput" type="text" placeholder="e.g. 123" maxlength="3">
+          <p class="alert-text alert-text--transparent">Can’t be blank</p>
+        </div>
+      </div>
+      <button id="confirmBtn">Confirm</button>
+    </div>
+    <div class="added-card">
+      <img src="assets/images/added-card-image.png">
+      <p>THANK YOU!</p>
+      <p class="added-card-text">We’ve added your card details</p>
+      <button id="continueBtn">Continue</button>
+    </div>
+  </div>
+</body>
+</html>
