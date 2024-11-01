@@ -97,11 +97,6 @@ function addCardInfos(){
   } else{
     cardInfos.style.display = 'none';
     addedCard.style.display = 'flex';
-    cvc.innerText = '000';
-    expDateYear.innerText = '00';
-    expDateMonth.innerText = '00';
-    cardNumber.innerText = '0000 0000 0000 0000';
-    cardHolderName.innerText = 'JANE APPLESEED';
   }
 }
 
@@ -113,6 +108,11 @@ function continueCardInfos(){
   monthInput.value = '';
   yearInput.value = '';
   cvcInput.value = '';
+  cvc.innerText = '000';
+  expDateYear.innerText = '00';
+  expDateMonth.innerText = '00';
+  cardNumber.innerText = '0000 0000 0000 0000';
+  cardHolderName.innerText = 'JANE APPLESEED';
 }
 
 nameInput.addEventListener('input', showCardOwnerName);
